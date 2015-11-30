@@ -46,4 +46,5 @@ The following sites were referenced when working on this project:
 * <a href="https://developer.foursquare.com">Foursquare API</a>
 * <a href="http://www.onextrapixel.com/2013/06/24/creating-a-swipeable-side-menu-for-the-web">Creating side menu for web</a>
 * <a href="https://github.com/bettiolo/oauth-signature-js">Javascript OAuth 1.0a signature generator</a>
-* <a href="http://stackoverflow.com/questions/29152676/yelp-api-oauth-invalid-signature-expected-signature-base-string">Stackoverflow: Yelp API OAuth</a>
+* <a href="http://stackoverflow.com/questions/29152676/yelp-api-oauth-invalid-signature-expected-signature-base-string">Stack Overflow: Yelp API OAuth</a>
+* <a href="https://scotch.io/quick-tips/default-sizes-for-twitter-bootstraps-media-queries">Default sizes for Bootstrap media queries </a>
