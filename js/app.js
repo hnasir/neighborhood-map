@@ -1,8 +1,8 @@
 // For accessing Foursquare API services
 var foursquareApi = {
   // Foursquare authentication info
-  clientId: 'NYVAAV0OLNG5R4B1ZB3EU1UHINJRERWB3L3MXQWSEAPP3YMR',
-  clientSecret: 'HM2QYKDNVFRD0ZEFENGLSM25UDMBCQTVZNXNZKPBU0QHLG0C',
+  clientId: 'REPLACE_WITH_4SQ_CLIENT_ID',
+  clientSecret: 'REPLACE_WITH_4SQ_CLIENT_SECRET',
 
   // Function to retrieve tips from a specific coffee venue based on Foursquare venueId
   getFourSquareTips: function (venueId, callback) {
@@ -60,16 +60,16 @@ var yelpApi = {
     }
 
     // Yelp credential information required for authentication
-    var consumerSecret = 'RoHXlKWFjIIqJHEd24rFHalsMuA';
-    var tokenSecret = 'Lgf_nZCeozt93mqd6w1UPDiq5Dw';
+    var consumerSecret = 'REPLACE_WITH_YELP_CONSUMER_SECRET';
+    var tokenSecret = 'REPLACE_WITH_YELP_TOKEN_SECRET';
 
     // Form url we are using for the request with appended Yelp business id
     var apiURL = 'https://api.yelp.com/v2/business/' + yelpBusinessId;
 
     // Set required parameters for oauth signing
     var parameters = {
-      oauth_consumer_key: 'tn3U3Qf4qg_rwnKoBcGbHQ',
-      oauth_token: 'rXgbJN6vVJIjwceED8M0Uz26IB5p_JFl',
+      oauth_consumer_key: 'REPLACE_WITH_YELP_CONSUMER_KEY',
+      oauth_token: 'REPLACE_WITH_YELP_CONSUMER_TOKEN',
       oauth_nonce: nonce_generate(),
       oauth_timestamp: Math.floor(Date.now()/1000),
       oauth_signature_method: 'HMAC-SHA1',
@@ -125,8 +125,9 @@ var model = {
   // Function to connect and authenticate to Firebase DB
   authenticateDB: function() {
     firebaseDBAccessObj.authWithPassword({
-      email: "testuser@coffeenotes.com",
-      password: "pass123"
+      // Insert Firebase credentials below
+      email: "",
+      password: ""
     }, function(error, authData) {
       if (error) {
         console.log("Firebase DB Login Failed!", error);
